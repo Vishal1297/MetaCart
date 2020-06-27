@@ -4,4 +4,4 @@
 
 ## Client Side
 
-<img src="images/MetaCart.png" height="550" width="950"> 
+<img src="images/MetaCart.png" height="535" width="950"> 
