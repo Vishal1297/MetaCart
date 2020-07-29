@@ -28,7 +28,6 @@
 		}
 		input {
 			width: 80%;
-			border-radius: 12px;
 			padding: 10px 4px;
 		}
 		input[type=submit] {

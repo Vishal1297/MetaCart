@@ -35,7 +35,6 @@ input, select, textarea, button {
 	padding: 2%;
 	font-size: 41px;
 	letter-spacing: 4px;
-	border-radius: 15px;
 }
 
 #header {
@@ -72,6 +71,10 @@ span .fa-shopping-cart {
 
 h1 {
 	margin: 0;
+}
+
+table {
+	width: 100%;
 }
 
 th {

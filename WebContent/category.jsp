@@ -68,8 +68,9 @@
 		<div id="nav">
 			<ul id="list">
 				<%
+				ArrayList<Category> categoryList = null;
 					try {
-							ArrayList<Category> categoryList = (ArrayList<Category>) (request.getAttribute("categoryList"));
+							categoryList = (ArrayList<Category>) (request.getAttribute("categoryList"));
 							for (Category category : categoryList) {
 				%>
 						<li>
@@ -82,11 +83,19 @@
          				}
 				%>
 			</ul>
+			<%
+					if(categoryList == null || categoryList.isEmpty()) {
+				%>
+					<h2>No Category Found</h2>
+				<%
+					}
+				%>
 		</div>
 		<div id="content">
 			<%
+				ArrayList<Product> productListTwo = null;
 				try {
-						ArrayList<Product> productListTwo = (ArrayList<Product>) (request.getAttribute("productList"));
+						productListTwo = (ArrayList<Product>) (request.getAttribute("productList"));
 						for (Product product : productListTwo) {
 							String image = ProductDbservice.getImage(product.getProductId());
 			%>
@@ -113,6 +122,14 @@
 				}catch (Exception e) {
     				out.println("No Products");
  				}
+			%>
+			
+			<%
+				if(productListTwo == null || productListTwo.isEmpty()) {
+			%>
+				<h2>No Products Found In This Category</h2>
+			<%
+				}
 			%>
 		</div>
 	</div>

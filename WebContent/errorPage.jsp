@@ -26,14 +26,27 @@
 	<%@ include file="menu.html" %>
 	<div id="main">
 		<%
-			String message = request.getAttribute("message").toString();
-			String link = request.getAttribute("link").toString();
+		String message = "";
+		String link = "";
+			try{
+				message = request.getAttribute("message").toString();
+				link = request.getAttribute("link").toString();
+			}catch(Exception ex){
+				ex.printStackTrace();
+		%>
+			<h2>Something Went Wrong</h2>
+		<%
+			}
 		%>
 		<h2><%=message%></h2>
 		<%
-			if(!link.isEmpty()&& !link.equals("view")) {
+			if(!link.isEmpty() && !link.equals("view")) {
 		%>
 			<a href="<%=link%>"><button>Retry</button></a>
+		<%
+			} else {
+		%>
+			<h2>Something Went Wrong</h2>
 		<%
 			}
 		%>
