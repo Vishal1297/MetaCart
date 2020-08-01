@@ -30,7 +30,6 @@
 		input {
 			width: 80%;
 			text-align: center;
-			border-radius: 12px;
 			padding: 10px 4px;
 		}
 		input[type=submit] {
@@ -56,7 +55,7 @@
 		<form id="form" action="updateCategory.do" method="post">
 			<table>
 				<tr><td>Category ID :</td></tr>
-				<tr><td><input type="number" placeholder="Enter Category ID" name="categoryId" value="<%=category.getCategoryId() %>"></td></tr>
+				<tr><td><input type="number" placeholder="Enter Category ID" disabled="disabled" name="categoryId" value="<%=category.getCategoryId() %>"></td></tr>
 				<tr><td>Category Name :</td></tr>
 				<tr><td><input type="text" placeholder="Enter Category Name" name="categoryName" value="<%=category.getCategoryName()%>"></td></tr>
 				<tr><td><input type="submit" value="Update"></td></tr>

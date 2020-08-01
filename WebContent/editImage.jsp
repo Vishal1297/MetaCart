@@ -31,7 +31,6 @@
 		}
 		input {
 			width: 70%;
-			border-radius: 12px;
 			padding: 12px 4px;
 		}
 		input[type=file]{

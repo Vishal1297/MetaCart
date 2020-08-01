@@ -15,7 +15,6 @@ a button {
 	width: 8%;
 	margin: 40px 0;
 	border: 1px solid grey;
-	border-radius: 16px;
 	outline: none;
 	padding: 14px 0px;
 	font-size: 18px;
@@ -25,7 +24,7 @@ a button {
 <body>
 	<%@ include file="header.html"%>
 	<div id="main">
-		<h2>Thanks for visiting META-CART</h2>
+		<h2>Thanks for visiting MetaCart</h2>
 		<a href="categories.do"><button type="button">Continue</button></a>
 	</div>
 	<%@ include file="footer.html"%>

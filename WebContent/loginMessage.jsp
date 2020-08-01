@@ -13,7 +13,6 @@
 		}
 		a button {
 			width: 10%;
-			border-radius: 15px;
 			outline: none;
 			padding: 14px 0px;
 			font-size: 20px;

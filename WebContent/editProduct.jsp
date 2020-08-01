@@ -29,7 +29,6 @@
 		}
 		input {
 			width: 70%;
-			border-radius: 12px;
 			padding: 10px 4px;
 		}
 		textarea {

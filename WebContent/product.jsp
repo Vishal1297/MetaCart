@@ -50,7 +50,6 @@ label {
 a button {
 	width: 120px;
 	border: 1px solid grey;
-	border-radius: 16px;
 	padding: 14px 0;
 	font-size: 18px;
 }
@@ -71,7 +70,6 @@ span a {
 span a button {
 	width: 100%;
 	border: 1px solid grey;
-	border-radius: 16px;
 	font-size: 26px;
 	padding: 12% 0;
 }
